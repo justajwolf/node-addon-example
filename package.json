@@ -1,0 +1,42 @@
+{
+    "name": "@justajwolf/node-addon-example",
+    "version": "1.0.1",
+    "description": "node-addon-example",
+    "author": "justajwolf",
+    "main": "./lib/index.cjs",
+    "scripts": {
+        "test": "node test/test.mjs"
+    },
+    "exports": {
+        "default": {
+            "require": "./lib/index.cjs",
+            "import": "./lib/index.mjs"
+        }
+    },
+    "gypfile": true,
+    "directories": {
+        "lib": "lib",
+        "src": "src",
+        "test": "test"
+    },
+    "files": [
+        "lib/**",
+        "src/**",
+        "binding.gyp"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/justajwolf/nodejs.git"
+    },
+    "bugs": {
+        "url": "https://github.com/justajwolf/nodejs/issues"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "bindings": "^1.5.0",
+        "node-addon-api": "^8.1.0"
+    }
+}
