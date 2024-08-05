@@ -1,6 +1,6 @@
 {
     "name": "@justajwolf/node-addon-example",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "node-addon-example",
     "author": "justajwolf",
     "main": "./lib/index.cjs",
@@ -14,11 +14,6 @@
         }
     },
     "gypfile": true,
-    "directories": {
-        "lib": "lib",
-        "src": "src",
-        "test": "test"
-    },
     "files": [
         "lib/**",
         "src/**",
@@ -29,10 +24,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/justajwolf/nodejs.git"
+        "url": "git+https://github.com/justajwolf/node-addon-example.git"
     },
     "bugs": {
-        "url": "https://github.com/justajwolf/nodejs/issues"
+        "url": "https://github.com/justajwolf/node-addon-example/issues"
     },
     "license": "MIT",
     "dependencies": {
