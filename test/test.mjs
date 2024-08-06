@@ -1,2 +1,2 @@
-import a from "../lib/index.mjs";
+import a from "..";
 console.log(a.hello());
