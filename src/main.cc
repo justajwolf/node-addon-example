@@ -1,15 +1,8 @@
-#include <napi.h>
-
-Napi::String Method(const Napi::CallbackInfo &info)
-{
-    Napi::Env env = info.Env();
-    return Napi::String::New(env, "hello_world~");
-}
+#include "addon.h"
 
 Napi::Object Init(Napi::Env env, Napi::Object exports)
 {
-    exports.Set(Napi::String::New(env, "hello"),
-                Napi::Function::New(env, Method));
+    MountExport(env, exports);
     return exports;
 }
 

@@ -1,10 +1,11 @@
 {
     "name": "@justajwolf/node-addon-example",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "node-addon-example",
     "author": "justajwolf",
     "main": "./lib/index.cjs",
     "scripts": {
+        "recompile": "node-gyp build",
         "test": "node test/test.mjs"
     },
     "exports": {
@@ -17,7 +18,8 @@
     "files": [
         "lib/**",
         "src/**",
-        "binding.gyp"
+        "binding.gyp",
+        "test/**"
     ],
     "publishConfig": {
         "access": "public"
